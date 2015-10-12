@@ -16,8 +16,10 @@
   },
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
     "gulp-concat": "^2.6.0",
     "gulp-csso": "^1.0.0",
+    "gulp-livereload": "^3.8.1",
     "gulp-sass": "^2.0.4",
     "gulp-webserver": "^0.9.1"
   }
