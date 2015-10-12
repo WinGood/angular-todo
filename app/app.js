@@ -4,8 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var config = require('./config');
+var mongoose = require('./libs/mongoose');
 
-var routes = require('./routes/index');
 var app = express();
 
 // uncomment after placing your favicon in /public
