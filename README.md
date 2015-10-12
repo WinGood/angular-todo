@@ -1,15 +1,10 @@
-# MEAN TODO Application
+# MEAN TODO Приложение
 
-Что будем использовать в работе:
-* Angular.js
-* Node.js
-* Mongodb
-* Express
+В разработке мы будем использовать MEAN стек и другие технологии:
 * Bootstrap
 * Sass
 * Gulp
 * Bower
-* Git
 
 Функционал приложения на **начальном этапе:**
 * CRUD операции с задачами
@@ -21,31 +16,54 @@
 * Установка даты выполнения и напоминания
 * Метки для задач
 * Степень важности
+* ...
+
+## Развертывание приложения
+Предполагается что у вас уже установлены: **node.js**, **express-generator**, **bower**, **gulp**, **nodemon**, **mongodb**.
+
+Для загрузки зависимостей перейдите в директорию проекта и выполните следующие команды в терминале:
+```
+npm install
+bower install
+```
+Для запуска приложения выполните следующие команды:
+```
+nodemon
+```
+Для запуска **gulp** и начала разработки:
+```
+cd public
+gulp
+```
 
 ## Структура папок
 
 ```
-|-app Express framework
+|-app express фреймворк
+    |- config настройки приложения nconf
+    |- libs вспомогательные файлы
+    |- models mongoose модели
+    |- routes api роутеры
 |-public/
     |-app/
-        |-assets/ Статичные файлы
+        |-assets/ статичные файлы
             |- css
             |- img
             |- js
-            |- views Отдельные страницы приложения
-            |- vendor Пакеты из Bower
-            app.js Файл приложения
-            index.html Главный layout
-    |- development Основная директория frontend разработки
+            |- views страницы приложения
+            |- vendor пакеты из Bower
+            app.js главный файл angular приложения
+            index.html главный layout
+    |- development основная директория frontend разработки
         |- controllers
         |- sass
         |- services
-        |- veiws
+        |- views
+            index.html
         app.js
-        index.html
-        routes.js Routes приложения
-    bower.json
-    gulpfile.js
+        routes.js angular routes приложения
+|-bower.json
+|-gulpfile.js
 |-package.json
 |-README.md
 ```
